@@ -79,6 +79,7 @@ angular.module('contenteditable', [])
           sel.removeAllRanges()
           sel.addRange(range)
         }
+        element[0].blur()
       }
       if (opts.selectNonEditable) {
         element.bind('click', function(e) {
